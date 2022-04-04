@@ -1,0 +1,8 @@
+def shipping_fee_cost(number_of_items):
+    first_item = 10.95
+    other_items = (number_of_items-1) * 2.95
+    total_cost = first_item + other_items
+    return total_cost
+
+print(shipping_fee_cost(5))
+
