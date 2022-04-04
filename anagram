@@ -1,0 +1,16 @@
+word1 = input("What is the first word: ")
+word2 = input("What is the second word: ")
+
+
+def anagram_detector(first_word=word1, second_word=word2):
+    for letters in word1:
+            if letters in word2:
+
+                result = "They are both anagrams."
+            else:
+                result = "They are not anagrams."
+    return result
+
+
+
+print(anagram_detector())
