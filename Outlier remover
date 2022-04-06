@@ -1,0 +1,19 @@
+
+def outlier_remover(n,  *args):
+    enlisted = [num for num in args]
+    enlisted.sort()
+    # print(enlisted)
+    numbs = range(n, len(enlisted)-n)
+    new_list = []
+    for figs in numbs:
+        new_list.append(enlisted[figs])
+    return f"old list: {enlisted} \n \nnew list: {new_list}"
+    
+
+
+
+# Testing the function:
+
+print(outlier_remover(2, 1, 2, 3, 5, 4, 7, 6, 8, 9, 56, 7, 8, 56, 645, 45, 56, 45, 452, 3))
+
+
