@@ -1,0 +1,12 @@
+
+enlisted = []
+inputted = True
+while inputted == True:
+    your_input = int(input("input your number: "))
+    enlisted.append(your_input)
+    if your_input == 0:
+        enlisted.pop(len(enlisted)-1)
+        print(enlisted)
+        inputted = False
+    elif your_input != 0:
+        print(enlisted)
